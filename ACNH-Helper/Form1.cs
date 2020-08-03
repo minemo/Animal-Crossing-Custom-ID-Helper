@@ -70,5 +70,11 @@ namespace ACNH_Helper
             ProcessStartInfo nooksisland = new ProcessStartInfo(@"https://nooksisland.com");
             Process.Start(nooksisland);
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo mgithub = new ProcessStartInfo(@"https://github.com/minemo");
+            Process.Start(mgithub);
+        }
     }
 }
