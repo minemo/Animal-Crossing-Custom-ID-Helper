@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net.Http;
 using System.Net;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 namespace ACNH_Helper
 {
@@ -62,6 +63,12 @@ namespace ACNH_Helper
                     }
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo nooksisland = new ProcessStartInfo(@"https://nooksisland.com");
+            Process.Start(nooksisland);
         }
     }
 }
